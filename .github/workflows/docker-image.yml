@@ -36,7 +36,7 @@ jobs:
       env:
         NEW_VERSION: ${{steps.version.outputs.version}}
       run: |
-        docker build -t hectortyt/docker-graphql:$NEW_VERSION
+        docker build -t hectortyt/docker-graphql:$NEW_VERSION .
         docker build -t hectortyt/docker-graphql:latest .
     - name: Push Docker Image
       env:
