@@ -28,6 +28,6 @@ jobs:
         docker build -t hectortyt/docker-graphql .
     - name: Push Docker Image
       run: |
-        docker push hectortyt/docker-graphql .
+        docker push hectortyt/docker-graphql
     #- name: Build the Docker image
      # run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
